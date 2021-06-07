@@ -1,0 +1,68 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.canvas {
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.11);
+}
+
+.controls {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls-range {
+    margin-bottom: 30px;
+}
+
+.controls-btn {
+    margin-bottom: 30px;
+}
+
+.controls-btn button {
+    cursor: pointer;
+    padding: 5px;
+    width: 80px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.11);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.controls-btn button:active {
+    transform: scale(0.96);
+}
+
+
+.controls-colors{
+    display: flex;
+}
+
+.controls-colors>li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.controls-colors>li:active {
+    transform: scale(0.96);
+}
+.controls-colors>li+li {
+    margin-left: 2px;
+}
